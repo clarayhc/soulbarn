@@ -1,38 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
+/* Resetting default styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    box-sizing: border-box;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
 }
 
-nav h1 {
-    margin: 0;
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #8b4513; /* Brownish color for a warm feel */
+    color: #fff;
+    padding: 20px 0;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
+header h1 {
+    font-size: 2.5rem;
 }
 
-nav ul li {
-    margin-left: 15px;
+.date {
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
-section {
+/* Main Image styling */
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Event Details styling */
+.event-details {
     padding: 20px;
-    margin: 20px;
+    text-align: center;
 }
 
-#services {
-    display: flex;
-    align-items: center;
+.event-details h2 {
+    font-size: 1.8rem;
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* RSVP Button styling */
+.rsvp {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.rsvp-button {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.rsvp-button:hover {
+    background-color: #6a3310;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
