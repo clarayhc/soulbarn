@@ -1,12 +1,6 @@
-const images = ["service1.jpg", "service2.jpg", "service3.jpg"];
-let index = 0;
-
-document.getElementById("next").addEventListener("click", () => {
-    index = (index + 1) % images.length;
-    document.getElementById("service-img").src = images[index];
-});
-
-document.getElementById("prev").addEventListener("click", () => {
-    index = (index - 1 + images.length) % images.length;
-    document.getElementById("service-img").src = images[index];
+// Add this in a new file named script.js and link it in your HTML
+document.querySelector('.rsvp-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert("Thank you for your interest! You will be redirected to the RSVP page.");
+    window.location.href = "https://example.com/register"; // Change URL as needed
 });
